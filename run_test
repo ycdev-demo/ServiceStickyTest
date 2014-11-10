@@ -1,0 +1,7 @@
+#!/bin/sh
+
+./gradlew iD
+
+adb shell am startservice -n me.ycdev.android.demo.servicestickytest/.AssistantService \
+    -a me.ycdev.android.demo.servicestickytest.ACTION_RUN_TEST
+
